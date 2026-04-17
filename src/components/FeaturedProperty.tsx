@@ -66,7 +66,7 @@ export default function FeaturedProperty() {
             <div className="flex items-center justify-between">
               <span className="text-sm font-semibold text-gray-900">Offered at $2,490,000</span>
               <Link
-                to="/listings/3957-s-main-st-acworth"
+                to="/3957-s-main-st"
                 className="inline-flex items-center gap-1.5 text-red-700 hover:text-red-800 text-sm font-medium transition-colors hover:gap-2.5 duration-200"
               >
                 View Listing <ArrowRight size={14} />

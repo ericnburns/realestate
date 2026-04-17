@@ -37,9 +37,29 @@ export default function InquiryCard() {
     });
     if (dbError) {
       setError('Something went wrong. Please call us directly.');
-    } else {
-      setSuccess(true);
+      setLoading(false);
+      return;
     }
+
+    await fetch(
+      `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-lead-email`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim(),
+          message: form.message.trim(),
+          source: 'Property Listing Inquiry',
+        }),
+      }
+    );
+
+    setSuccess(true);
     setLoading(false);
   };
 

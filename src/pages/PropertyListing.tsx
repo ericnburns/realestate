@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowLeft,
@@ -88,6 +89,10 @@ function ListingFooter() {
 }
 
 export default function PropertyListing() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <header className="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
