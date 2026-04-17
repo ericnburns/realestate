@@ -37,11 +37,30 @@ export default function Contact() {
 
     if (dbError) {
       setError('Something went wrong. Please try again or call us directly.');
-    } else {
-      setSuccess(true);
-      setForm(initialForm);
+      setLoading(false);
+      return;
     }
 
+    await fetch(
+      `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-lead-email`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          phone: form.phone.trim(),
+          message: form.message.trim(),
+          source: 'Homepage Contact Form',
+        }),
+      }
+    );
+
+    setSuccess(true);
+    setForm(initialForm);
     setLoading(false);
   };
 
@@ -76,7 +95,7 @@ export default function Contact() {
 
               <div className="flex flex-col gap-5">
                 <a
-                  href="tel:+17705550100"
+                  href="tel:+14046453356"
                   className="flex items-center gap-4 group"
                 >
                   <div className="bg-red-50 p-3 rounded-lg group-hover:bg-red-700 transition-colors duration-200">
@@ -102,7 +121,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="sms:+17705550100"
+                  href="sms:+14046453356"
                   className="flex items-center gap-4 group"
                 >
                   <div className="bg-red-50 p-3 rounded-lg group-hover:bg-red-700 transition-colors duration-200">

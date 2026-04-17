@@ -32,7 +32,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/listings/3957-s-main-st-acworth" element={<PropertyListing />} />
+      <Route path="/3957-s-main-st" element={<PropertyListing />} />
     </Routes>
   );
 }
