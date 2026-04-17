@@ -1,0 +1,105 @@
+export const PROPERTY = {
+  address: '3957 S Main St',
+  city: 'Acworth',
+  state: 'GA',
+  zip: '30101',
+  price: '$2,490,000',
+  priceRaw: 2490000,
+  type: 'Class A Office Building',
+  size: '16,284 SF (12,274 SF Main | 4,020 SF Upper, Unfinished)',
+  yearBuilt: 2021,
+  status: 'Available',
+  description: `This premium Class-A office building at 3957 S Main St in Acworth offers an exceptional opportunity for owner-users, investors, or businesses seeking a headquarters-quality environment in one of North Georgia's most accessible corridors.
+
+Built in 2021, the property is move-in ready with high-end finishes throughout, including a welcoming reception area, multiple executive offices, three fully equipped conference rooms, ample collaborative space, and a breakroom. The layout easily accommodates single-tenant occupancy or can be segmented into a multi-tenant configuration to serve as an income-producing asset.
+
+Positioned near Hwy 41 and Hwy 92 in Acworth, the location provides outstanding visibility and convenient access for clients and employees alike — with proximity to I-75, McCollum Airport, and the growing Acworth/Kennesaw commercial district.`,
+  highlights: [
+    'Turnkey layout with minimal reconfiguration required',
+    'Luxury design and finishes throughout',
+    'Professional, client-facing reception',
+    'Excellent location near Hwy 41 and Hwy 92',
+    'Owner-user or investment opportunity',
+    'Multi-tenant configuration possible',
+    '30+ surface parking spaces',
+    'Built 2021 — modern mechanical systems',
+  ],
+  specs: [
+    { label: 'Building Size', value: '16,284 SF' },
+    { label: 'Main Floor', value: '12,274 SF (Finished)' },
+    { label: 'Upper Level', value: '4,020 SF (Unfinished)' },
+    { label: 'Year Built', value: '2021' },
+    { label: 'Property Type', value: 'Office' },
+    { label: 'Zoning', value: 'C-2 Commercial' },
+    { label: 'Parking', value: '30+ Surface Spaces' },
+    { label: 'Stories', value: '2' },
+    { label: 'Condition', value: 'Excellent / Turnkey' },
+    { label: 'County', value: 'Cobb County' },
+  ],
+  brochureUrl: 'https://pub-321da1607fde45c389ff3f43ef3b56c2.r2.dev/3957%20S%20Main%20St%20-%20Property%20Brochure.pdf',
+  floorplanPdfUrl: 'https://pub-321da1607fde45c389ff3f43ef3b56c2.r2.dev/3957%20S%20Main%20St%20-%20Floorplan%20PDF.pdf',
+};
+
+const p = (id: number, w: number, h: number) =>
+  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}&h=${h}&fit=crop`;
+
+export const GALLERY_IMAGES = [
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/32f5e5da-b27d-4165-9d91-1073e4da4900/public', alt: 'Exterior — Front Close Up', category: 'Exterior' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/e0d83dab-0d2c-46fc-17f7-fb0b34707300/public', alt: 'Lobby', category: 'Lobby & Reception' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/90aff953-8159-4eb6-1f2f-4fadae59cc00/public', alt: 'Lobby', category: 'Lobby & Reception' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/5a4d0c4c-efda-42bc-07c1-9bccf6bdd100/public', alt: 'Conference A', category: 'Conference Rooms' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/f02067c5-f840-4022-f3f2-37d7715dd900/public', alt: 'Conference A', category: 'Conference Rooms' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/9489a9cb-1c2a-4172-183d-1f470d9a4000/public', alt: 'Copy and Files', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/59e3fd8e-7b34-4f8d-fcb2-3a68906ae000/public', alt: 'Copy and Files', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/caa363ca-7cb5-4f45-4db7-f422f227c500/public', alt: 'Open Conference', category: 'Conference Rooms' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/79ec324f-1a2c-407e-8ed9-4c3efbd6d400/public', alt: 'Office 2', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/72fbf43e-9f3f-4f0e-d23e-cabbefd44900/public', alt: 'Coffee Station', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/9c463aa4-2b35-49c7-7e50-9e362acf3d00/public', alt: 'Office 4', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/df057cca-339d-4bb9-2a0d-5aace1da7a00/public', alt: 'Pass Thru Conference', category: 'Conference Rooms' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/8890ed9e-4f14-4878-3f1c-8703aa1d1d00/public', alt: 'Pass Thru Conference', category: 'Conference Rooms' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/5bcd65c5-932d-491f-fc71-1f242d192c00/public', alt: 'Office 6', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/d0cf0fa5-b764-4741-799b-d97fcd950f00/public', alt: 'Office 7', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/9a3f3106-42f7-4a3b-6e64-68dcbe375b00/public', alt: 'Open Office 2', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/dd5970c3-a4eb-4c23-6bc5-5fd214d9d700/public', alt: 'Open Office 2', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/eb06a4fd-648a-43cf-ac81-1212f1bdcc00/public', alt: 'Admin Workspace', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/1ffd1465-7f0e-41a9-2891-96ac30c0bd00/public', alt: 'Office 8', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/67fbafa5-3c42-4fd1-2e66-e4ac1422b900/public', alt: 'Open Office 3', category: 'Offices' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/983c0d71-aee3-4544-fece-4be16e5bc100/public', alt: 'Break Room', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/5fa8a2cc-0e92-4cf9-896a-8ef69bb71c00/public', alt: 'Break Room', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/a8422173-1d48-48b1-53ae-06e1a8728900/public', alt: 'Collaboration Room', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/e60d991e-663d-44db-5095-39b47547f100/public', alt: 'Collaboration Room', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/3a8e2e27-e0d5-46da-7c2a-022d1f3da700/public', alt: 'Open Workspace A', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/5d6649a9-7745-4810-30eb-f8e66f781000/public', alt: 'Open Workspace A', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/ef65d54c-6ecd-4817-671b-f8387d075d00/public', alt: 'Open Workspace B', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/5f07e04d-b7af-4029-105a-cd5d61ec6e00/public', alt: 'Open Workspace C', category: 'Common Areas' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/d6f2d415-9dac-42d1-51d4-2c868c453d00/public', alt: 'Conference B', category: 'Conference Rooms' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/d1932f07-1ff0-4996-a531-29264fd95f00/public', alt: 'Upper Floor', category: 'Storage' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/18596c15-56e6-45b2-a676-a31b46838900/public', alt: 'Upper Floor', category: 'Storage' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/66087451-3708-4076-5373-0befca878a00/public', alt: 'Full Bath', category: 'Amenities' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/5c18be91-5ba0-4694-e737-261602c44e00/public', alt: 'Mens Restroom', category: 'Amenities' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/15988079-b7d2-49b4-7f15-14144e517400/public', alt: 'Womens Restroom', category: 'Amenities' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/607e3740-7b5a-402c-e993-b77e4a3d9e00/public', alt: 'Exterior Signage', category: 'Exterior' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/90fec8ab-b80f-4534-ac70-c26f72793300/public', alt: 'Front Elevation', category: 'Exterior' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/687ad8de-5cfc-4f77-26a4-1c2e4fa62600/public', alt: 'Left Side Exterior', category: 'Exterior' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/1356c0ad-9055-47dc-ad92-473ac9b63f00/public', alt: 'Patio Outside Break Room', category: 'Exterior' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/6a361d93-ec32-4fbc-a43f-f221a6850e00/public', alt: 'Exterior Right Side', category: 'Exterior' },
+{src:'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/30ee246e-671e-448d-5fc3-57a018d73700/public', alt: 'Exterior Front Close Up', category: 'Exterior' },
+];
+
+export const FLOORPLAN_IMAGES = [
+  { src: 'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/183b0cba-8e4c-4144-a525-2701794feb00/public', alt: 'Floor Plan — Main Level Overview' },
+  { src: 'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/e8ab45d5-ef85-4570-3b29-afbf893a1b00/public', alt: 'Floor Plan — Exterior Overview' },
+  { src: 'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/1270e3f9-b7bf-46bc-3ae9-19a890a06500/public', alt: 'Floor Plan — Offices' },
+  { src: 'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/9bb30a4d-57cd-4294-0903-534b31153300/public', alt: 'Floor Plan — Common Space' },
+  { src: 'https://imagedelivery.net/Ef11cwJOxTBjAJ0V4Yn5vw/e4a90277-32c5-4e56-2a6e-2f16d0e4e400/public', alt: 'Floor Plan — Upper Floor' },
+];
+
+export const POI_ITEMS = [
+  { label: 'Hwy 41 (Cobb Pkwy)', distance: '0.2 mi', type: 'highway' },
+  { label: 'Hwy 92', distance: '0.4 mi', type: 'highway' },
+  { label: 'I-75', distance: '2.1 mi', type: 'highway' },
+  { label: 'McCollum Airport', distance: '3.8 mi', type: 'airport' },
+  { label: 'Walmart', distance: '0.6 mi', type: 'retail' },
+  { label: 'Kennesaw State University', distance: '4.5 mi', type: 'education' },
+  { label: 'Kennestone Hospital', distance: '6.1 mi', type: 'medical' },
+];
